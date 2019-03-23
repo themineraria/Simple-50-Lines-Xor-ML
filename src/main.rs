@@ -43,7 +43,7 @@ fn main() {
     let mut weights = vec![rand_norm(), rand_norm(), rand_norm(), rand_norm(), rand_norm(), rand_norm()];
     let mut biases = vec![rand_norm(), rand_norm(), rand_norm()];
     let train_inpt = vec!(vec![0_f64, 0_f64],vec![0_f64, 1_f64],vec![1_f64, 0_f64],vec![1_f64, 1_f64]);
-    let train_out = vec!(0_f64,1_f64,1_f64,1_f64); //your training outputs
+    let train_out = vec!(0_f64,1_f64,1_f64,0_f64); //your training outputs
     let test_in = vec![0_f64, 0_f64]; //your test values
     train(&train_inpt, &train_out, &mut weights, &mut biases, 0.3, 200);
     println!("\nResult:{}",feed_forward(&test_in, &weights, &biases).round());
