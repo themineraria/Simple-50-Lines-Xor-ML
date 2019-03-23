@@ -1,0 +1,9 @@
+[package]
+name = "simple-50-lines-xor-nn"
+version = "1.0.0"
+authors = ["Cyprien Isnard"]
+edition = "2018"
+
+[dependencies]
+
+rand = "0.6.5"
